@@ -10,6 +10,7 @@ $output= shell_exec("ping ".$ipAddress." -c 1 -w 1");
 		$resultArry=explode(' ',$output);
 		echo $resultArry[24];
 		//print_r(array_values($resultArry));
+		
 
 	$output=shell_exec("sshpass -p 'CloudFi' scp /var/www/html/index.html CloudFi@".$ipAddress.":/home/CloudFi/index.html");
 
